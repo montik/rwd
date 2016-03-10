@@ -1,3 +1,10 @@
+html, body {
+  width: 100%;
+}
+
+* {
+ box-sizing: border-box;
+}
 header, aside, nav, section {
   display: block;
 }
@@ -10,7 +17,8 @@ body {
 	font-size: 16px;
 }
 #wrapper {
-	width: 998px;
+	width: 80%;
+  max-width: 1200px;
 	padding: 0 20px 20px 20px;
 	margin: 0 auto;
 }
@@ -24,9 +32,10 @@ header {
   margin: 0 0 20px 0;
 }
 main {
-	width: 550px;
+	width: calc(60% - 40px);
 	min-height: 280px;
-	padding: 20px 20px 20px 20px;
+  margin: 0 20px;
+	padding: 20px;
 	background-color: #FFF;
   float:left;
 }
@@ -34,9 +43,9 @@ main {
 /* nav -- MENU*/
 nav {
   float:left;
-	width: 200px;
+	width: 20%;
 	padding: 0;
-  margin: 0 20px 0 0;
+  margin: 0;
 	border: 1px solid #000;
 	background-color: #DA622E;
   overflow: hidden;
@@ -81,9 +90,9 @@ a:hover, a:focus {
 }
 
 aside {
-	width: 150px;
+	width: 20%;
 	min-height: 200px;
-	float: right;
+	float: left;
 	margin: 0 0 0 25pxpx;
 	background-color: #999;
   padding: 20px 10px;
