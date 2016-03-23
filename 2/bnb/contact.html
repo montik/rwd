@@ -6,6 +6,7 @@
     <meta name="description" content="The best B&B in the whole Laguna!">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link href="responsive-style.css" rel="stylesheet">
+    <link href="flex.css" rel="stylesheet">
   </head>
 
   <body>
@@ -14,18 +15,18 @@
         <h1>Canal View B & B</h1>
       </header>
 
-      <nav role="navigation">
+      <nav class="framed" role="navigation">
         <h2> Menu </h2>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="rooms.html">Rooms</a></li>
           <li><a href="prices.html">Prices</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="current-page"><a href="contact.html">Contact</a></li>
           <li><a href="http://en.turismovenezia.it/">Turismo Venezia</a></li>
         </ul>
       </nav>
 
-      <main class="whited" role="main">
+      <main class="whited framed" role="main">
           <h2> Contact us! </h2>
           <form action="confirmation.html" role="form">
             <ul class="list-none">
@@ -63,7 +64,7 @@
           </form>
       </main>
 
-      <aside class="whited comment" role="complementary">
+      <aside class="whited framed comment" role="complementary">
         <h2> Reviews </h2>
         <p>I just wanted to let you know what a wonderful time we had at your B and B. I have visited Venice many times, but yours is a wonderful place to stay, its my new favorite and I will be sure to recommend it to my fellow professors travelling in Venice.Venice may not have oysters, but your place is a pearl. Brad Clarke</p>
       </aside>
