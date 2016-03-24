@@ -21,7 +21,7 @@ main {
   flex-basis: 20em;
   flex-grow: 5;
 }
-@media all and (min-width: 35em) and (max-width: 60em) {
+@media all and (min-width: 35em) and (max-width: 59.99em) {
   main {
     order: 1;
   }

@@ -108,7 +108,7 @@ nav h2 {
   margin: .5em 0 2em 0;
   padding: 0 0 .5em .5em;
 }
-@media all and (min-width: 35em) and (max-width: 60em) {
+@media all and (min-width: 35em) and (max-width: 59.99em) {
   nav h2 {
     text-indent: 100%;
     white-space: nowrap;
@@ -124,7 +124,7 @@ nav li {
   padding: .5em;
   border-top: 1px solid steelblue;
 }
-@media all and (min-width: 35em) and (max-width: 60em) {
+@media all and (min-width: 35em) and (max-width: 59.99em) {
   nav li {
     display: inline-block;
     border-top: 1px solid transparent;
