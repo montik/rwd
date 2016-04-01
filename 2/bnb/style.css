@@ -5,9 +5,11 @@ html, body {
 * {
  box-sizing: border-box;
 }
+
 header, aside, nav, section {
   display: block;
 }
+
 body {
 	margin: 0;
 	background-image: url(background.jpg);
