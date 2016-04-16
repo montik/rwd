@@ -26,6 +26,24 @@ h2 {
   color: steelblue;
   text-transform: uppercase;
   font-size: 100%;
+	margin: .4em 0;
+}
+@media all and (min-width: 37.5em){
+	h2 {
+		font-size: 120%;
+		margin: .8em 0 .2em 0;
+	}
+}
+@media all and (min-width: 50em){
+	h2 {
+		font-size: 140%;
+	}
+}
+
+@media all and (min-width: 37.5em){
+	p {
+		margin: .6em 0;
+	}
 }
 
 .shadowd {
@@ -38,6 +56,9 @@ h2 {
 .comment {
   font-size: 80%;
   color: black;
+}
+@media all and (min-width: 37.5em){
+	font-size: 100%;
 }
 
 .img-center {
@@ -69,6 +90,7 @@ h2 {
 }
 
 .img-frame {
+	box-sizing: content-box;
 	border: 2px solid;
 	border-radius: 5px;
 	margin: 0 auto;
@@ -82,12 +104,27 @@ h2 {
 }
 @media all and (min-width: 37.5em) {
 	.img-frame {
-		width: 11.25em;
+		width:36.2%; /* img: 36.225% */
+	}
+}
+@media all and (min-width: 50em) {
+	.img-frame {
+		width: 30.4%; /* 30.492% */
+	}
+}
+@media all and (min-width: 58em) {
+	.img-frame {
+		width: 17.685em;
 	}
 }
 
 .img-frame img {
 	display: block;
+}
+@media all and (min-width: 58em) {
+	.img-frame img {
+		width: 17.685em;
+	}
 }
 
 .header-img {
