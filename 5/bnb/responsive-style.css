@@ -1,0 +1,489 @@
+html{
+	width: 100%;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+body {
+	width: 100%;
+  box-sizing: border-box;
+	background-color: #c5d9f8;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 85%;
+	line-height: 1.3;
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+@media all and (min-width: 30em) {
+  body {
+    font-size: 90%;
+  }
+}
+@media all and (min-width: 37.5em) {
+  body {
+    font-size: 100%;
+    line-height: 1.4;
+    hyphens: none;
+    text-align: left;
+  }
+}
+
+h1 {
+  color: #5199d5;
+  text-align: center;
+	text-transform: uppercase;
+  font-size: 190%;
+	margin: .3em 0;
+}
+@media all and (min-width: 28em){
+  h1{
+    font-size: 250%;
+		margin: .4em 0;
+  }
+}
+
+h2 {
+  color: steelblue;
+  text-transform: uppercase;
+  font-size: 100%;
+	margin: .4em 0;
+	flex-basis: 100%;
+}
+@media all and (min-width: 37.5em){
+	h2 {
+		font-size: 120%;
+		margin: .8em 0 .2em 0;
+	}
+}
+@media all and (min-width: 50em){
+	h2 {
+		font-size: 140%;
+	}
+}
+
+@media all and (min-width: 37.5em){
+	p {
+		margin: .6em 0;
+	}
+}
+
+.shadowd {
+	text-shadow: 1px 1px 0px black,
+							 -1px -1px 0px black,
+							 1px -1px 0px black,
+							 -1px 1px 0px black;
+}
+
+.comment {
+  font-size: 80%;
+  color: black;
+}
+@media all and (min-width: 37.5em){
+	.comment {
+		font-size: 100%;
+	}
+}
+
+.img-center {
+  width: 100%;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.whited {
+	baground: white;
+  background: hsla(0, 100%, 100%, .92);
+  border-radius: 5px;
+  padding: .01em 2%;
+	overflow: hidden;
+}
+
+.framed {
+  margin: .3em 0;
+	border: 1px solid black;
+}
+@media all and (min-width: 30em) {
+  .framed {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+.img-frame {
+	box-sizing: content-box;
+	border: 2px solid;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 46%;
+	overflow: hidden;
+}
+@media all and (min-width: 25em) {
+	.img-frame {
+		width: 32%;
+	}
+}
+@media all and (min-width: 37.5em) {
+	.img-frame {
+		width:36.2%; /* img: 36.225% */
+	}
+}
+@media all and (min-width: 50em) {
+	.img-frame {
+		width: 30.4%; /* 30.492% */
+	}
+}
+@media all and (min-width: 58em) {
+	.img-frame {
+		width: 17.685em;
+	}
+}
+
+.img-frame img {
+	display: block;
+}
+@media all and (min-width: 58em) {
+	.img-frame img {
+		width: 17.685em;
+	}
+}
+
+.header-img {
+	width: 107%;
+	position: relative;
+	left: -3.4%;
+	top: -0.2em;
+}
+
+
+/* 355 / 251 = 1.41... */
+@media all and (min-width: 37.5em) and (max-width: 50em){
+	body {
+	background-image: linear-gradient(90deg, white 76%, transparent 77%, transparent 97%, white 98%),
+											linear-gradient(to top, transparent calc(24vw * 1.2), #c5d9f8 calc(24vw * 1.39)),
+											url(img/gondola250.jpg);
+		background-size: 100%, 100%, 25%;
+background-position: 0% 0%, 0% 0%, 101% 100%;
+		background-repeat: no-repeat;
+	}
+}
+@media all and (min-width: 42.5em) {
+  body {
+    font-size: 105%;
+    line-height: 1.45;
+  }
+}
+@media all and (min-width: 50em) {
+	body{
+		background-image: url(img/small-canal-gondoliers-900.jpg);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-bottom: 10%;
+	}
+}
+@media all and (min-width: 62.5em) {
+	body{
+		background-image: url(img/small-canal-gondoliers-1100.jpg);
+	}
+}
+@media all and (min-width: 75em) {
+	body{
+		background-image: url(img/small-canal-gondoliers.jpg);
+	}
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 58em;
+  padding: 0;
+  width: 100%;
+}
+
+nav {
+  overflow: hidden;
+  background: #A65E5E;
+  background: hsl(0, 29%, 51%);
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: .8em;
+  text-align: center;
+  max-height: 2.1em;
+  transition: max-height 1s cubic-bezier(.45,.05,.55,.95);
+	flex-basis: 100%;
+}
+@media all and (min-width: 35em) {
+  nav {
+    max-height: 200em;
+  }
+}
+@media all and (min-width: 50em) {
+	nav {
+		float: left;
+		width: 13%;
+		flex: 0 0 13%;
+	}
+}
+
+nav:hover, nav:active, nav:focus {
+  max-height: 200em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav h2 {
+  color: white;
+  border-bottom: 1px solid  #0f5c94;
+  margin: .5em 0 2em 0;
+  padding: 0 0 .5em .5em;
+}
+@media all and (min-width: 35em) {
+  nav h2 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+nav li {
+  padding: .5em;
+  border-top: 1px solid  #0f5c94;
+}
+@media all and (min-width: 35em) and (max-width: 49.9em) {
+  nav li {
+    display: inline-block;
+    border-top: 1px solid transparent;
+  }
+  nav li:hover, nav li:focus, nav li:active,
+  nav li.current-page{
+    border-top: 1px solid #bbb;
+  }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus, nav a:active,
+nav li.current-page a{
+  color: black;
+}
+
+header {
+	flex-basis: 100%;
+}
+@media all and (min-width: 37.5em) and (max-width: 49.99em) {
+	header {
+		background-color: hsla(360, 100%, 100%, 0.82) !important;
+	}
+}
+
+main {
+  margin-bottom: .8em;
+	width: 100%;
+}
+@media all and (min-width:37.5em){
+	main {
+		float: left;
+		width: 73%;
+		flex: 1 0 73%;
+	}
+}
+@media all and (min-width:50em){
+	main {
+		width: 63%;
+		flex: 1 0 63%;
+	}
+}
+
+aside {
+  transition: all 1s;
+	flex-basis: 100%;
+}
+@media all and (min-width: 37.5em) {
+  aside {
+		float: left;
+		width: 23%;
+		flex-basis: 23%;
+  }
+}
+@media all and (min-width: 50em) {
+  aside {
+		width: 18%;
+		flex-basis: 18%;
+  }
+}
+
+/* contacts */
+.list-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form li{
+  width: 100%;
+  text-align: center;
+	margin-bottom: .4em;
+}
+@media all and (min-width: 25em){
+	form li {
+		margin-bottom: 0;
+	}
+}
+
+li label {
+	display: block;
+  text-align: right;
+  width: 100%;
+}
+@media all and (min-width: 16em){
+	li label {
+		text-align: left;
+	}
+}
+@media all and (min-width: 25em){
+	li label {
+		display: inline-block;
+		padding-right: .5em;
+		width: 30%;
+	}
+}
+
+li input,
+li textarea {
+  display: block;
+  width: 100%;
+}
+@media all and (min-width: 25em){
+	li input,
+	li textarea {
+		display: inline-block;
+		width: 55%;
+	}
+}
+
+fieldset {
+  margin: 20px 0;
+  padding: 20px 10px;
+}
+
+#btn-container {
+  width: 100%;
+  text-align: right;
+}
+
+#btn-container input {
+  width: 30%;
+  min-width: 80px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid gray;
+  margin: 20px 0 16px 20px;
+}
+
+/* Flex settings */
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  padding-bottom: .5em;
+}
+
+picture {
+  order: -1;
+}
+
+.rooms {
+  flex-basis: 65%;
+  flex-grow: 1;
+}
+
+/* prices */
+
+.table {
+	width: 100%;
+	margin: auto;
+}
+@media all and (min-width: 20em) {
+	.table {
+		width: 90%;
+	}
+}
+table, thead, tbody, tr, td {
+	display: block;
+}
+thead {
+	display: none;
+}
+td {
+	position: relative;
+	padding-left: calc(75% + .5em);
+	line-height: 1.7em;
+}
+@media all and (min-width: 27em){
+	td {
+		padding-left: calc(65% + .5em);
+	}
+}
+td[attr-name]:before {
+		content: attr(attr-name) ": ";
+}
+td::before {
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	width: calc(75% - .5em);
+	padding-right: .5em;
+	text-align: right;
+	white-space: nowrap;
+}
+@media all and (min-width: 27em){
+	td::before {
+		width: calc(65% - .5em);
+	}
+}
+td:nth-of-type(10n+1) {
+	margin-top:.5em;
+	font-weight: bold;
+}
+
+td:nth-of-type(10n+4), td:nth-of-type(10n+7) {
+	margin-bottom: .3em;
+}
+
+/* langs */
+.langs {
+	width: 160px; /* 48 * 3 + 8px * 2 */
+	margin:auto;
+}
+
+.lang {
+	display: inline-block;
+	margin-bottom: .2em;
+}
+.lang.it {
+	width: 48px;
+	height: 33px;
+	background-image: url(img/flags/spritz.png);
+	background-position: -48px 0;
+	margin-right: 8px;
+}
