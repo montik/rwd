@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>Homepage</title>
+    <meta name="description" content="The best B&B in the whole Laguna!">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link href="responsive-style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <header class="whited framed" role="banner">
+        <h1 class="shadowd">Canal View B&B</h1>
+      </header>
+
+      <nav class="framed" role="navigation">
+        <h2 class="shadowd"> Menu </h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li class="current-page"><a href="contact.html">Contact</a></li>
+          <li><a href="http://en.turismovenezia.it/">Turismo Venezia</a></li>
+        </ul>
+      </nav>
+
+      <main class="framed whited" role="main">
+          <h2> Contact us! </h2>
+          <form action="confirmation.html" role="form">
+            <ul class="list-none">
+              <fieldset>
+                <legend> Personal Information</legend>
+              <li>
+                <label for="i-name" id="l-name"> Name </label>
+                <input id="i-name" name="name" type="text" aria-labelledby="l-name" placeholder="Your Name">
+              </li>
+              <li>
+                <label for="i-email" id="l-email"> Email </label>
+                <input id="i-email" name="email" type="email" aria-labelledby="l-email" placeholder="you@example.com">
+              </li>
+            </fieldset>
+            <fieldset>
+              <legend> Travel Information </legend>
+              <li>
+                <label for="i-adate" id="l-adate"> Arrival </label>
+                <input id="i-adate" type="date" name="a-date" aria-labelledby="l-adate" placeholder="mm/dd/yyyy">
+              </li>
+              <li>
+                <label for="i-ddate" id="l-ddate"> Departure </label>
+                <input id="i-ddate" type="date" name="d-date" aria-labelledby="l-ddate" placeholder="mm/dd/yyyy">
+              </li>
+              <li>
+                <label for="i-msg" id="l-msg"> Message </label>
+                <textarea id="i-msg" name="d-date" aria-labelledby="l-ddate" placeholder="Message"></textarea>
+              </li>
+            </fieldset>
+            <div id="btn-container">
+              <input name="Reset" type="reset" value="Cancel">
+              <input type="Submit" value="Proceed" >
+            </div>
+            </ul>
+          </form>
+      </main>
+
+      <aside class="whited framed comment" role="complementary">
+        <h2> Reviews </h2>
+        <p>I just wanted to let you know what a wonderful time we had at your B and B. I have visited Venice many times, but yours is a wonderful place to stay, its my new favorite and I will be sure to recommend it to my fellow professors travelling in Venice.Venice may not have oysters, but your place is a pearl. Brad Clarke</p>
+      </aside>
+
+    </div>
+  </body>
+</html>
