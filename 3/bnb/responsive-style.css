@@ -114,17 +114,19 @@ h2 {
 }
 @media all and (min-width: 58em) {
 	.img-frame {
-		width: 17.685em;
+		width: 30%;
+		/* CALCULATION :)
+			 containing element (section) is 59vw <= 65% - 2% margin - 4% padding
+			 30% of 59% = 17.7vw
+			 if font-size: 105% => 58em = 974.4px
+			 then max display width of img: 17% of 974.4 = 172.47px
+		 */
 	}
 }
 
 .img-frame img {
 	display: block;
-}
-@media all and (min-width: 58em) {
-	.img-frame img {
-		width: 17.685em;
-	}
+	width: 100%;
 }
 
 .header-img {
